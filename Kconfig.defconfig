@@ -1,0 +1,21 @@
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_1HID_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "1HID"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_1HID_LEFT || SHIELD_1HID_RIGHT
+
+config ZMK_SPLIT
+	default y
+	
+endif 
